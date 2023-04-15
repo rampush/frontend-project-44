@@ -1,3 +1,4 @@
-import startQuestion from '../src/games/even.js';
+#!/usr/bin/env node
+import evenGame from '../src/games/even.js';
 
-export default startQuestion;
+evenGame();
