@@ -10,3 +10,7 @@
 ### CalcGame 6 step
 
 [![asciicast](https://asciinema.org/a/OuEAei9igBkhzYZgxGO9pVvTP.svg)](https://asciinema.org/a/OuEAei9igBkhzYZgxGO9pVvTP)
+
+### GCDGame 7 step
+
+[![asciicast](https://asciinema.org/a/0e7qzviH998xLoSPDk5aoxF11.svg)](https://asciinema.org/a/0e7qzviH998xLoSPDk5aoxF11)
