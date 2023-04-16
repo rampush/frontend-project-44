@@ -1,9 +1,6 @@
-import { question } from 'readline-sync';
 import randomNum from '../random-number.js';
 
-export const calcRules = () => {
-  return console.log('What is the result of the expression?');
-};
+export const calcRules = () => console.log('What is the result of the expression?');
 
 export const generateCalcRound = () => {
   const operators = ['+', '-', '*'];
@@ -14,11 +11,13 @@ export const generateCalcRound = () => {
 
   const question = `${operand1} ${operator} ${operand2}`;
 
-  operator === '+'
-    ? (answer = operand1 + operand2)
-    : operator === '-'
-    ? (answer = operand1 - operand2)
-    : (answer = operand1 * operand2);
+  if (operator === '+') {
+    answer = operand1 + operand2;
+  } else if (operator === '-') {
+    answer = operand1 - operand2;
+  } else {
+    answer = operand1 * operand2;
+  }
 
   answer = answer.toString();
 
