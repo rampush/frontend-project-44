@@ -18,3 +18,7 @@
 ### ProgressionGame 8 step
 
 [![asciicast](https://asciinema.org/a/MbqibH6ZxBH1eYBY2kWDaPSHC.svg)](https://asciinema.org/a/MbqibH6ZxBH1eYBY2kWDaPSHC)
+
+### PrimeGame 9 step
+
+[![asciicast](https://asciinema.org/a/IhiVD0llDsSkTT8STp1Q7jLoY.svg)](https://asciinema.org/a/IhiVD0llDsSkTT8STp1Q7jLoY)
