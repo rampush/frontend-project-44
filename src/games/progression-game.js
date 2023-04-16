@@ -16,7 +16,6 @@ export const generateProgressionRound = () => {
   const answer = progression[randomIndex].toString();
   progression[randomIndex] = '..';
   const question = progression.join(' ');
-  console.log([question, answer]);
   return [question, answer];
 };
 
