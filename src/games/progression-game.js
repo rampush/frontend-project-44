@@ -8,7 +8,7 @@ export const generateProgressionRound = () => {
   const progression = [randomNum(2, 15)];
   let step = randomNum(2, 5);
   const progressionLength = randomNum(5, 11);
-  const randomIndex = randomNum(3, progressionLength);
+  const randomIndex = randomNum(0, progressionLength);
 
   for (let i = 0; i < progressionLength; i++) {
     progression.push(progression[i] + step);
@@ -16,8 +16,8 @@ export const generateProgressionRound = () => {
   const answer = progression[randomIndex].toString();
   progression[randomIndex] = '..';
   const question = progression.join(' ');
-
+  console.log([question, answer]);
   return [question, answer];
 };
 
-// generateProgressionRound();
+generateProgressionRound();
