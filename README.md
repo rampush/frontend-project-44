@@ -6,3 +6,7 @@
 ### EvenGame 5 step
 
 [![asciicast](https://asciinema.org/a/vp2rE4ykogSyAJ3cukPCu9KpU.svg)](https://asciinema.org/a/vp2rE4ykogSyAJ3cukPCu9KpU)
+
+### CalcGame 6 step
+
+[![asciicast](https://asciinema.org/a/OuEAei9igBkhzYZgxGO9pVvTP.svg)](https://asciinema.org/a/OuEAei9igBkhzYZgxGO9pVvTP)
