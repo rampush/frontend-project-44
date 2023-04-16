@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import evenGame from '../src/games/even.js';
+import { evenRules, generateRound } from '../src/games/even-game.js';
+import runEngine from '../src/index.js';
 
-evenGame();
+runEngine(evenRules, generateRound);
