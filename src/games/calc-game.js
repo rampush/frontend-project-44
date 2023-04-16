@@ -7,18 +7,20 @@ export const calcRules = () => {
 
 export const generateCalcRound = () => {
   const operators = ['+', '-', '*'];
-  const operator = operators[randomNum(3)];
-  const operand1 = randomNum(21);
-  const operand2 = randomNum(21);
+  const operator = operators[randomNum(0, 2)];
+  const operand1 = randomNum(1, 20);
+  const operand2 = randomNum(1, 20);
+  let answer;
 
   const question = `${operand1} ${operator} ${operand2}`;
 
-  const answer =
-    operator === '+'
-      ? operand1 + operand2
-      : operator === '-'
-      ? operand1 - operand2
-      : operand1 * operand2;
+  operator === '+'
+    ? (answer = operand1 + operand2)
+    : operator === '-'
+    ? (answer = operand1 - operand2)
+    : (answer = operand1 * operand2);
 
-  return [question, String(answer)];
+  answer = answer.toString();
+
+  return [question, answer];
 };

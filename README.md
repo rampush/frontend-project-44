@@ -14,3 +14,7 @@
 ### GCDGame 7 step
 
 [![asciicast](https://asciinema.org/a/0e7qzviH998xLoSPDk5aoxF11.svg)](https://asciinema.org/a/0e7qzviH998xLoSPDk5aoxF11)
+
+### ProgressionGame 8 step
+
+[![asciicast](https://asciinema.org/a/MbqibH6ZxBH1eYBY2kWDaPSHC.svg)](https://asciinema.org/a/MbqibH6ZxBH1eYBY2kWDaPSHC)

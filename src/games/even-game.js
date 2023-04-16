@@ -5,7 +5,7 @@ export const evenRules = () => {
 };
 
 export const generateEvenRound = () => {
-  const question = randomNum(21);
+  const question = randomNum(1, 20);
   let answer = question % 2 === 0 ? 'yes' : 'no';
   return [question, answer];
 };

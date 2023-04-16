@@ -5,8 +5,8 @@ export const gcdRules = () => {
 };
 
 export const generateGcdRound = () => {
-  const number1 = randomNum(100);
-  const number2 = randomNum(100);
+  const number1 = randomNum(1, 99);
+  const number2 = randomNum(1, 99);
   let answer;
   let greatestNum;
 
@@ -20,9 +20,9 @@ export const generateGcdRound = () => {
 
   for (let i = 1; i <= greatestNum; i++) {
     if (number1 % i === 0 && number2 % i === 0) {
-      answer = i;
+      answer = i.toString();
     }
   }
 
-  return [question, String(answer)];
+  return [question, answer];
 };
