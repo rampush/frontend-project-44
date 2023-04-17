@@ -16,7 +16,7 @@ export const generateGcdRound = () => {
 
   const question = `${number1} ${number2}`;
 
-  for (let i = 1; i <= greatestNum; i += i) {
+  for (let i = 1; i <= greatestNum; i += 1) {
     if (number1 % i === 0 && number2 % i === 0) {
       answer = i.toString();
     }
