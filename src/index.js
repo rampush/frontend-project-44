@@ -17,9 +17,12 @@ const runEngine = (rules, generateRound) => {
       console.log(
         `'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.\nLet's try again ${userName}!`,
       );
+      break;
+    }
+    if (correctAnswers === 3) {
+      console.log(`Congratulations, ${userName}!`);
     }
   } while (correctAnswers < 3);
-  console.log(`Congratulations, ${userName}!`);
 };
 
 export default runEngine;
