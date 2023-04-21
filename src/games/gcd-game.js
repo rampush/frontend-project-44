@@ -1,6 +1,6 @@
 import randomNum from '../random-number.js';
 
-export const gcdRules = () => console.log('Find the greatest common divisor of given numbers.');
+export const gcdRules = 'Find the greatest common divisor of given numbers.';
 
 export const generateGcdRound = () => {
   const number1 = randomNum(1, 99);

@@ -1,8 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/rampush/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/rampush/frontend-project-44/actions)",
-  "main": "index.js",
+  "description": "CLI-based application for playing 5 mini-games",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

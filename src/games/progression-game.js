@@ -1,6 +1,6 @@
 import randomNum from '../random-number.js';
 
-export const progressionRules = () => console.log('What number is missing in the progression?');
+export const progressionRules = 'What number is missing in the progression?';
 
 export const generateProgressionRound = () => {
   const progression = [randomNum(2, 15)];

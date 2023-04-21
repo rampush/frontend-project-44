@@ -1,6 +1,6 @@
 import randomNum from '../random-number.js';
 
-export const calcRules = () => console.log('What is the result of the expression?');
+export const calcRules = 'What is the result of the expression?';
 
 export const generateCalcRound = () => {
   const operators = ['+', '-', '*'];
