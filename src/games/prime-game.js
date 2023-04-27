@@ -1,10 +1,9 @@
-import randomNum from '../random-number.js';
+import getRandomInRange from '../random-number.js';
+import runEngine from '../index.js';
 
-export const primeRules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export const generatePrimeRound = () => {
-  const question = randomNum(1, 10);
-  let answer;
+const isPrime = (question) => {
   let dividerCount = 0;
 
   for (let i = 1; i <= question; i += 1) {
@@ -12,11 +11,17 @@ export const generatePrimeRound = () => {
       dividerCount += 1;
     }
   }
-  if (dividerCount > 2 || question === 1) {
-    answer = 'no';
-  } else {
-    answer = 'yes';
-  }
 
+  if (dividerCount > 2 || question === 1) {
+    return 'no';
+  }
+  return 'yes';
+};
+
+const generateRound = () => {
+  const question = getRandomInRange(1, 10);
+  const answer = isPrime(question);
   return [question, answer];
 };
+
+export default () => runEngine(rules, generateRound);

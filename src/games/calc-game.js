@@ -1,25 +1,33 @@
-import randomNum from '../random-number.js';
+import getRandomInRange from '../random-number.js';
+import runEngine from '../index.js';
 
-export const calcRules = 'What is the result of the expression?';
+const rules = 'What is the result of the expression?';
 
-export const generateCalcRound = () => {
+const getRandomOperator = () => {
   const operators = ['+', '-', '*'];
-  const operator = operators[randomNum(0, 2)];
-  const operand1 = randomNum(1, 20);
-  const operand2 = randomNum(1, 20);
-  let answer;
+  return operators[getRandomInRange(0, operators.length - 1)];
+};
 
-  const question = `${operand1} ${operator} ${operand2}`;
-
-  if (operator === '+') {
-    answer = operand1 + operand2;
-  } else if (operator === '-') {
-    answer = operand1 - operand2;
-  } else {
-    answer = operand1 * operand2;
+const calculate = (operand1, operand2, operator) => {
+  switch (operator) {
+    case '+':
+      return operand1 + operand2;
+    case '-':
+      return operand1 - operand2;
+    case '*':
+      return operand1 * operand2;
+    default:
+      throw new Error(`Operator ${operator} - is incorrect!`);
   }
+};
 
-  answer = answer.toString();
-
+const generateRound = () => {
+  const operand1 = getRandomInRange(0, 100);
+  const operand2 = getRandomInRange(0, 100);
+  const operator = getRandomOperator();
+  const question = `${operand1} ${operator} ${operand2}`;
+  const answer = String(calculate(operand1, operand2, operator));
   return [question, answer];
 };
+
+export default () => runEngine(rules, generateRound);
