@@ -12,7 +12,7 @@ const isPrime = (question) => {
     }
   }
 
-  return dividerCount <= 2;
+  return dividerCount <= 2 && question > 1;
 };
 
 const generateRound = () => {
