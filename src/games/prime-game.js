@@ -12,15 +12,12 @@ const isPrime = (question) => {
     }
   }
 
-  if (dividerCount > 2 || question === 1) {
-    return 'no';
-  }
-  return 'yes';
+  return dividerCount <= 2;
 };
 
 const generateRound = () => {
   const question = getRandomInRange(1, 10);
-  const answer = isPrime(question);
+  const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
 
